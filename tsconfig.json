@@ -39,7 +39,8 @@
       "@screens/*": ["./screens/*"],
       "@utils": ["./utils/"],
       "@assets": ["./assets/"],
-      "@local-storage": ["./services/local-storage"]
+      "@local-storage": ["./services/local-storage"],
+      "@zustand": ["./services/zustand/store"]
     }
   },
   "exclude": [

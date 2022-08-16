@@ -1,7 +1,4 @@
-export interface ICardItem {
+export interface IUser {
   name: string;
-  description: string;
-  language: string;
-  star: number;
-  fork: number;
+  email: string;
 }
