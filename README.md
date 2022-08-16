@@ -15,8 +15,9 @@
 
 # 🥳 Version 3.3+
 
-We're proudly announce that `Version 3` is here!
+We're proudly announce that `Version 3.4` is here!
 
+- `Zustand` integration with cool slices
 - Native Splash Screen
 - Much Better Documentation
 - New React Native Architecture Ready (RN 0.68+) 🍻
@@ -54,7 +55,7 @@ We're proudly announce that `Version 3` is here!
   - [React Native Dynamic Vector Icons](https://github.com/WrathChaos/react-native-dynamic-vector-icons)
 - **[Localization](https://github.com/stefalda/ReactNativeLocalization) (Multi-Language Support)**
 - **HTTP Network Management**
-  - [Axios](https://github.com/axios/axios)**
+  - [Axios](https://github.com/axios/axios)\*\*
   - [Axios Hooks](https://github.com/simoneb/axios-hooks)
   - API Service with Usage Examples
 - **Built-in EventEmitter**
@@ -68,6 +69,7 @@ We're proudly announce that `Version 3` is here!
   - Auto prettier on pre-commit
   - Awesome ESLint Integration
 - **Built-in Custom Font Implementation**
+
   - All you need to do is copy-paste the .tff files into `assets/fonts` folder
   - Run `npx react-native-asset` command
 
@@ -178,6 +180,8 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [x] ~~Better and separated documentation~~
 - [x] ~~Axios Hooks~~
 - [x] ~~React Native New Architecture~~
+- [x] ~~Zustand Integration~~
+- [ ] Zustand Documentation
 - [ ] `Babel Plugin Module Resolver` Documentation with Example
 - [ ] `Navigation Service` Documentation with Example
 - [ ] `Localization` Documentation with Example
