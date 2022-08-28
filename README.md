@@ -33,6 +33,7 @@ We're proudly announce that `Version 3.4` is here!
 
 - **Typescript**
 - **Flipper Ready**
+- **Zustand State Management**
 - **Navigation System**
   - [React Navigation 6](https://reactnavigation.org/blog/2021/08/14/react-navigation-6.0/)
   - [React Navigation Helpers](https://github.com/WrathChaos/react-navigation-helpers)
