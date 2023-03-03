@@ -13,21 +13,17 @@
         src="assets/react-native-typescript-boilerplate.gif" height="650" width="350" />
 </p>
 
-# 🥳 Version 3.3+
+# 🥳 🌟 Version 4
 
-We're proudly announce that `Version 3.4` is here!
+We're proudly announce that `Version 4`
 
-- `Zustand` integration with cool slices
+- `Zustand` integration with cool slices 🐻
 - Native Splash Screen
 - Much Better Documentation
-- New React Native Architecture Ready (RN 0.68+) 🍻
-- Detailed Roadmap
-- Awesome Theme Support for both Light / Dark Mode
-- Removed Optional Dependencies
-- Latest `React` and `React Native` Dependencies
+- New React Native Architecture Ready **(RN 0.71+)** 🍻
+- Awesome Theme Support for both Light / Dark Mode 🌙
+- Latest `React` and `React Native` Dependencies 🚀
 - All Dependencies are Upgraded
-- Code Refactoring
-- New GIF with the Project Example for Theming
 
 # 🐶 What's Included?
 
