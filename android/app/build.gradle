@@ -94,6 +94,12 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    // ? You can remove if you don't want to use JAVA Version 18
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     namespace "com.rntypescriptboilerplate"
     defaultConfig {
         applicationId "com.rntypescriptboilerplate"

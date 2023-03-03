@@ -182,6 +182,7 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [x] ~~Axios Hooks~~
 - [x] ~~React Native New Architecture~~
 - [x] ~~Zustand Integration~~
+- [ ] `react-native-mmkv-storage` will be re-implement when the [issue](https://github.com/ammarahm-ed/react-native-mmkv-storage/issues/316) is resolved on RN 71+
 - [ ] Zustand Documentation
 - [ ] `Babel Plugin Module Resolver` Documentation with Example
 - [ ] `Navigation Service` Documentation with Example

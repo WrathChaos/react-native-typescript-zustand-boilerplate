@@ -1,12 +1,8 @@
 import create, { StoreApi } from "zustand";
-import { persist, StateStorage } from "zustand/middleware";
-import { MMKVLoader } from "react-native-mmkv-storage";
+import { createJSONStorage, persist } from "zustand/middleware";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import createAppSlice, { AppSlice } from "@services/zustand/app/AppSlice";
 import createUserSlice, { UserSlice } from "@services/zustand/user/UserSlice";
-
-const sessionStorage = new MMKVLoader()
-  .withInstanceID("sessionStorage")
-  .initialize();
 
 export type StoreState = AppSlice & UserSlice;
 export type StoreSlice<T> = (
@@ -22,7 +18,7 @@ const useStore = create<StoreState>()(
     }),
     {
       name: "store",
-      getStorage: () => sessionStorage as StateStorage,
+      storage: createJSONStorage(() => AsyncStorage),
     },
   ),
 );
