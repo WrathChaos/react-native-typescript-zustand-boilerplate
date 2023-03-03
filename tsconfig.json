@@ -43,6 +43,7 @@
       "@zustand": ["./services/zustand/store"]
     }
   },
+  "extends": "@tsconfig/react-native/tsconfig.json",
   "exclude": [
     "node_modules",
     "babel.config.js",
