@@ -44,7 +44,7 @@ We're proudly announce that `Version 4`
 - **Native Splash Screen Integration**
   - [React Native Splash Screen](https://github.com/crazycodeboy/react-native-splash-screen)
 - **Awesome [React Native Helpers](https://github.com/WrathChaos/react-native-helpers) Integration**
-  - Noth Detection Support
+  - Notch Detection Support
   - Better Dimension Helper (Ex: ScreenWidth, ScreenHeight)
   - Cool Text Helpers
 - **React Native Vector Icons**
