@@ -4,7 +4,6 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "@react-native-community",
     "prettier",
   ],
   ignorePatterns: [
