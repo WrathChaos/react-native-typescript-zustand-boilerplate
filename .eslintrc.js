@@ -109,8 +109,6 @@ module.exports = {
     "import/no-deprecated": 0,
     "@typescript-eslint/indent": 0,
     "react-hooks/rules-of-hooks": 2,
-    "jest/no-identical-title": 2,
-    "jest/valid-expect": 2,
     "unused-imports/no-unused-imports": 2,
     "unused-imports/no-unused-vars": 2,
     camelcase: 2,
