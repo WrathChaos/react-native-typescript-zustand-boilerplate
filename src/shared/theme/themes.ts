@@ -1,6 +1,6 @@
-import { DefaultTheme, ExtendedTheme } from "@react-navigation/native";
+import { Theme } from "@react-navigation/native";
 
-export const palette = {
+const palette = {
   primary: "#0564d4",
   secondary: "#ff6a00",
   background: "#f6f8fa",
@@ -26,16 +26,19 @@ export const palette = {
   calpyse: "#2b7488",
 };
 
+interface ExtendedTheme extends Theme {
+  colors: Theme["colors"] & typeof palette;
+}
+
 export const LightTheme: ExtendedTheme = {
   dark: false,
   colors: {
-    ...DefaultTheme.colors,
     ...palette,
   },
 };
 
 export const DarkTheme: ExtendedTheme = {
-  ...DefaultTheme,
+  dark: true,
   colors: {
     ...LightTheme.colors,
     background: palette.black,
@@ -49,3 +52,7 @@ export const DarkTheme: ExtendedTheme = {
     borderColor: palette.borderColorDark,
   },
 };
+
+declare module "@react-navigation/native" {
+  export function useTheme(): ExtendedTheme;
+}
