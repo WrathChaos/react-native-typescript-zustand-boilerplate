@@ -1,20 +1,19 @@
 import React, { useMemo } from "react";
-import { View, StyleProp, ViewStyle } from "react-native";
+import { StyleProp, View, ViewStyle } from "react-native";
 import { useTheme } from "@react-navigation/native";
-import Icon from "react-native-dynamic-vector-icons";
+import Icon, { IconType } from "react-native-dynamic-vector-icons";
 import RNBounceable from "@freakycoder/react-native-bounceable";
 /**
  * ? Local Imports
  */
 import createStyles from "./CardItem.style";
-import { ICardItem } from "@services/models";
 import Text from "@shared-components/text-wrapper/TextWrapper";
 
 type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
 
 interface ICardItemProps {
   style?: CustomStyleProp;
-  data: ICardItem;
+  data: any;
   onPress: () => void;
 }
 
@@ -45,14 +44,14 @@ const CardItem: React.FC<ICardItemProps> = ({ style, data, onPress }) => {
 
   const Star = () => (
     <View style={styles.starContainer}>
-      <Icon name="star-o" type="FontAwesome" color={colors.text} />
+      <Icon name="star-o" type={IconType.FontAwesome} color={colors.text} />
       <Text style={styles.valueTextStyle}>{star}</Text>
     </View>
   );
 
   const Fork = () => (
     <View style={styles.forkContainer}>
-      <Icon name="code-fork" type="FontAwesome" color={colors.text} />
+      <Icon name="code-fork" type={IconType.FontAwesome} color={colors.text} />
       <Text style={styles.valueTextStyle}>{fork}</Text>
     </View>
   );
