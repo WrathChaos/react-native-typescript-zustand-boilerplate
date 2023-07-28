@@ -20,7 +20,7 @@ We're proudly announce that `Version 4`
 - `Zustand` integration with cool slices 🐻
 - Native Splash Screen
 - Much Better Documentation
-- New React Native Architecture Ready **(RN 0.71+)** 🍻
+- New React Native Architecture Ready **(RN 0.72+)** 🍻
 - Awesome Theme Support for both Light / Dark Mode 🌙
 - Latest `React` and `React Native` Dependencies 🚀
 - All Dependencies are Upgraded
@@ -178,7 +178,7 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [x] ~~Axios Hooks~~
 - [x] ~~React Native New Architecture~~
 - [x] ~~Zustand Integration~~
-- [ ] `react-native-mmkv-storage` will be re-implement when the [issue](https://github.com/ammarahm-ed/react-native-mmkv-storage/issues/316) is resolved on RN 71+
+- [x] ~~`react-native-mmkv` will be re-implement when the [issue](https://github.com/ammarahm-ed/react-native-mmkv-storage/issues/316) is resolved on RN 71+~~
 - [ ] Zustand Documentation
 - [ ] `Babel Plugin Module Resolver` Documentation with Example
 - [ ] `Navigation Service` Documentation with Example
@@ -188,8 +188,6 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [ ] `Website` for the boilerplate
 - [ ] Splash Screen Documentation
 - [ ] `Detox E2E` Integration Fork Version
-- [ ] `Redux` Fork Version
-- [ ] `MobX State Tree` Fork Version
 - [ ] Write an article about the lib on `Medium`
 - [ ] Write an article about the lib on `DevTo`
 
