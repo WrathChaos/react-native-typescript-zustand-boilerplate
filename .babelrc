@@ -8,9 +8,10 @@
         "alias": [
           { "@shared-components": "./src/shared/components" },
           { "@shared-constants": "./src/shared/constants" },
+          { "@localization": "./src/shared/localization" },
           { "@font-size": "./src/shared/theme/font-size" },
           { "@api": "./src/services/api/index" },
-          { "@fonts": "./src/shared/theme/fonts" },
+          { "@fonts": "./src/shared/theme/fonts/index" },
           { "@colors": "./src/shared/theme/colors" },
           { "@theme": "./src/shared/theme" },
           { "@models": "./src/services/models" },

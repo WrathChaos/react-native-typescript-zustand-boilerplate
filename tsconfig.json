@@ -30,9 +30,11 @@
     "paths": {
       "@shared-components/*": ["./shared/components/*"],
       "@shared-constants": ["./shared/constants"],
+      "@shared-constants/*": ["./shared/constants/*"],
+      "@localization": ["./shared/localization"],
       "@font-size": ["./shared/theme/font-size"],
       "@api": ["./services/api/index"],
-      "@fonts": ["./shared/theme/fonts"],
+      "@fonts": ["./shared/theme/fonts/index"],
       "@colors": ["./shared/theme/colors"],
       "@theme/*": ["./shared/theme/*"],
       "@services/*": ["./services/*"],
