@@ -96,7 +96,6 @@ There is a good example by default on `HomeScreen`. You can delete the all scree
 
 **OR**
 
-- `rm -rf .git README.md`
 - `rm -rf ./assets`
 - `npm i`
 - `npm run husky:setup`
