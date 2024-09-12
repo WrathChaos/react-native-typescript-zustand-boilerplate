@@ -1,0 +1,3 @@
+set CC_FOR_TARGET "gcc"
+set CXX_FOR_TARGET "g++ -std=gnu++11"
+set compiler_vendor "clang"

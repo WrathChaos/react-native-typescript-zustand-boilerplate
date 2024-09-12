@@ -1,0 +1,659 @@
+current directory: /Users/kuray/Coursion/OpenSource/react-native-typescript-zustand-boilerplate/rnTypescriptZustandBoilerplate/vendor/bundle/ruby/2.7.0/gems/bigdecimal-3.1.8/ext/bigdecimal
+/Users/kuray/.rvm/rubies/ruby-2.7.4/bin/ruby -I /Users/kuray/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20240912-77657-vvpuz4.rb extconf.rb
+checking for __builtin_clz()... yes
+checking for __builtin_clzl()... yes
+checking for __builtin_clzll()... yes
+checking for float.h... yes
+checking for math.h... yes
+checking for stdbool.h... yes
+checking for stdlib.h... yes
+checking for x86intrin.h... no
+checking for _lzcnt_u32() in x86intrin.h... no
+checking for _lzcnt_u64() in x86intrin.h... no
+checking for intrin.h... no
+checking for __lzcnt() in intrin.h... no
+checking for __lzcnt64() in intrin.h... no
+checking for _BitScanReverse() in intrin.h... no
+checking for _BitScanReverse64() in intrin.h... no
+checking for labs() in stdlib.h... yes
+checking for llabs() in stdlib.h... yes
+checking for finite() in math.h... yes
+checking for isfinite() in math.h... no
+checking for ruby/atomic.h... no
+checking for ruby/internal/has/builtin.h... no
+checking for ruby/internal/static_assert.h... no
+checking for rb_rational_num() in ruby.h... yes
+checking for rb_rational_den() in ruby.h... yes
+checking for rb_complex_real() in ruby.h... yes
+checking for rb_complex_imag() in ruby.h... yes
+checking for rb_opts_exception_p() in ruby.h... yes
+checking for rb_category_warn() in ruby.h... no
+checking for RB_WARN_CATEGORY_DEPRECATED in ruby.h... no
+creating Makefile
+
+current directory: /Users/kuray/Coursion/OpenSource/react-native-typescript-zustand-boilerplate/rnTypescriptZustandBoilerplate/vendor/bundle/ruby/2.7.0/gems/bigdecimal-3.1.8/ext/bigdecimal
+make "DESTDIR=" clean
+
+current directory: /Users/kuray/Coursion/OpenSource/react-native-typescript-zustand-boilerplate/rnTypescriptZustandBoilerplate/vendor/bundle/ruby/2.7.0/gems/bigdecimal-3.1.8/ext/bigdecimal
+make "DESTDIR="
+compiling bigdecimal.c
+bigdecimal.c:1268:39: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        VALUE numerator = rb_funcall(digits, rb_intern("to_i"), 0);
+                                             ^~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1268:39: note: '{' token is here
+        VALUE numerator = rb_funcall(digits, rb_intern("to_i"), 0);
+                                             ^~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1268:39: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        VALUE numerator = rb_funcall(digits, rb_intern("to_i"), 0);
+                                             ^~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1268:39: note: ')' token is here
+        VALUE numerator = rb_funcall(digits, rb_intern("to_i"), 0);
+                                             ^~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1277:34: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+                              rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                      ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+bigdecimal.c:1277:34: note: '{' token is here
+                              rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                      ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+bigdecimal.c:1277:34: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+                              rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                      ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+bigdecimal.c:1277:34: note: ')' token is here
+                              rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                      ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+bigdecimal.c:1276:34: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            ret = rb_funcall(numerator, rb_intern("div"), 1,
+                                        ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1276:34: note: '{' token is here
+            ret = rb_funcall(numerator, rb_intern("div"), 1,
+                                        ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1276:34: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            ret = rb_funcall(numerator, rb_intern("div"), 1,
+                                        ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1276:34: note: ')' token is here
+            ret = rb_funcall(numerator, rb_intern("div"), 1,
+                                        ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1282:33: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+                             rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                     ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+bigdecimal.c:1282:33: note: '{' token is here
+                             rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                     ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+bigdecimal.c:1282:33: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+                             rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                     ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+bigdecimal.c:1282:33: note: ')' token is here
+                             rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                     ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+bigdecimal.c:1358:36: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    numerator = rb_funcall(digits, rb_intern("to_i"), 0);
+                                   ^~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1358:36: note: '{' token is here
+    numerator = rb_funcall(digits, rb_intern("to_i"), 0);
+                                   ^~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1358:36: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    numerator = rb_funcall(digits, rb_intern("to_i"), 0);
+                                   ^~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1358:36: note: ')' token is here
+    numerator = rb_funcall(digits, rb_intern("to_i"), 0);
+                                   ^~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1365:31: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+                           rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                   ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1365:31: note: '{' token is here
+                           rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                   ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1365:31: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+                           rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                   ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1365:31: note: ')' token is here
+                           rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                   ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+bigdecimal.c:1370:36: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+                                       rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                               ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:182:38: note: expanded from macro 'rb_Rational1'
+#define rb_Rational1(x) rb_Rational((x), INT2FIX(1))
+                                     ^
+bigdecimal.c:1370:36: note: '{' token is here
+                                       rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                               ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:182:38: note: expanded from macro 'rb_Rational1'
+#define rb_Rational1(x) rb_Rational((x), INT2FIX(1))
+                                     ^
+bigdecimal.c:1370:36: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+                                       rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                               ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:182:38: note: expanded from macro 'rb_Rational1'
+#define rb_Rational1(x) rb_Rational((x), INT2FIX(1))
+                                     ^
+bigdecimal.c:1370:36: note: ')' token is here
+                                       rb_funcall(INT2FIX(10), rb_intern("**"), 1,
+                                                               ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2689:27: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2686:35: note: expanded from macro 'rb_funcall'
+        const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+                                         ^~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:182:38: note: expanded from macro 'rb_Rational1'
+#define rb_Rational1(x) rb_Rational((x), INT2FIX(1))
+                                     ^
+bigdecimal.c:1576:40: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            return rb_num_coerce_cmp(self, r, rb_intern("<=>"));
+                                              ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+bigdecimal.c:1576:40: note: '{' token is here
+            return rb_num_coerce_cmp(self, r, rb_intern("<=>"));
+                                              ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+bigdecimal.c:1576:40: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            return rb_num_coerce_cmp(self, r, rb_intern("<=>"));
+                                              ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+bigdecimal.c:1576:40: note: ')' token is here
+            return rb_num_coerce_cmp(self, r, rb_intern("<=>"));
+                                              ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+bigdecimal.c:1579:46: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            return RTEST(rb_num_coerce_cmp(self, r, rb_intern("=="))) ? Qtrue : Qfalse;
+                                                    ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:481:26: note: expanded from macro 'RTEST'
+#define RTEST(v) RB_TEST(v)
+                         ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:479:31: note: expanded from macro 'RB_TEST'
+#define RB_TEST(v) !(((VALUE)(v) & (VALUE)~RUBY_Qnil) == 0)
+                              ^
+bigdecimal.c:1579:46: note: '{' token is here
+            return RTEST(rb_num_coerce_cmp(self, r, rb_intern("=="))) ? Qtrue : Qfalse;
+                                                    ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:481:26: note: expanded from macro 'RTEST'
+#define RTEST(v) RB_TEST(v)
+                         ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:479:31: note: expanded from macro 'RB_TEST'
+#define RB_TEST(v) !(((VALUE)(v) & (VALUE)~RUBY_Qnil) == 0)
+                              ^
+bigdecimal.c:1579:46: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            return RTEST(rb_num_coerce_cmp(self, r, rb_intern("=="))) ? Qtrue : Qfalse;
+                                                    ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:481:26: note: expanded from macro 'RTEST'
+#define RTEST(v) RB_TEST(v)
+                         ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:479:31: note: expanded from macro 'RB_TEST'
+#define RB_TEST(v) !(((VALUE)(v) & (VALUE)~RUBY_Qnil) == 0)
+                              ^
+bigdecimal.c:1579:46: note: ')' token is here
+            return RTEST(rb_num_coerce_cmp(self, r, rb_intern("=="))) ? Qtrue : Qfalse;
+                                                    ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:481:26: note: expanded from macro 'RTEST'
+#define RTEST(v) RB_TEST(v)
+                         ^
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:479:31: note: expanded from macro 'RB_TEST'
+#define RB_TEST(v) !(((VALUE)(v) & (VALUE)~RUBY_Qnil) == 0)
+                              ^
+bigdecimal.c:1582:10: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            f = rb_intern(">=");
+                ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+bigdecimal.c:1582:10: note: '{' token is here
+            f = rb_intern(">=");
+                ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+bigdecimal.c:1582:10: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            f = rb_intern(">=");
+                ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+bigdecimal.c:1582:10: note: ')' token is here
+            f = rb_intern(">=");
+                ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+bigdecimal.c:1586:10: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            f = rb_intern("<=");
+                ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+bigdecimal.c:1586:10: note: '{' token is here
+            f = rb_intern("<=");
+                ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+bigdecimal.c:1586:10: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            f = rb_intern("<=");
+                ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+bigdecimal.c:1586:10: note: ')' token is here
+            f = rb_intern("<=");
+                ^~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+bigdecimal.c:2095:39: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    if (!b) return DoSomeOne(self, r, rb_intern("remainder"));
+                                      ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2095:39: note: '{' token is here
+    if (!b) return DoSomeOne(self, r, rb_intern("remainder"));
+                                      ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2095:39: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    if (!b) return DoSomeOne(self, r, rb_intern("remainder"));
+                                      ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2095:39: note: ')' token is here
+    if (!b) return DoSomeOne(self, r, rb_intern("remainder"));
+                                      ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2178:29: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return DoSomeOne(self,r,rb_intern("divmod"));
+                            ^~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2178:29: note: '{' token is here
+    return DoSomeOne(self,r,rb_intern("divmod"));
+                            ^~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2178:29: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return DoSomeOne(self,r,rb_intern("divmod"));
+                            ^~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2178:29: note: ')' token is here
+    return DoSomeOne(self,r,rb_intern("divmod"));
+                            ^~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2197:35: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        return DoSomeOne(self, b, rb_intern("div"));
+                                  ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2197:35: note: '{' token is here
+        return DoSomeOne(self, b, rb_intern("div"));
+                                  ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2197:35: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        return DoSomeOne(self, b, rb_intern("div"));
+                                  ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+bigdecimal.c:2197:35: note: ')' token is here
+        return DoSomeOne(self, b, rb_intern("div"));
+                                  ^~~~~~~~~~~~~~~~
+/Users/kuray/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+bigdecimal.c:272:48: note: expanded from macro 'DoSomeOne'
+#define DoSomeOne(x,y,f) rb_num_coerce_bin(x,y,f)
+                                               ^
+28 warnings generated.
+compiling missing.c
+linking shared-object bigdecimal.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/kuray/Coursion/OpenSource/react-native-typescript-zustand-boilerplate/rnTypescriptZustandBoilerplate/vendor/bundle/ruby/2.7.0/gems/bigdecimal-3.1.8/ext/bigdecimal
+make "DESTDIR=" install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 bigdecimal.bundle ./.gem.20240912-77657-i3enk5

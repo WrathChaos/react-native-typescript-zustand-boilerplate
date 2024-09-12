@@ -1,79 +1,202 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<img alt="React Native Typescript Boilerplate" src="assets/logo.png" width="1050"/>
 
-# Getting Started
+[![A lot of fundamental features with Typescript support React Native Boilerplate](https://img.shields.io/badge/-A%20lot%20of%20fundamental%20features%20with%20Typescript%20support%20React%20Native%20Boilerplate-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-typescript-boilerplate)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+[![npm version](https://img.shields.io/npm/v/react-native-typescript-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-typescript-boilerplate)
+[![npm](https://img.shields.io/npm/dt/react-native-typescript-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-typescript-boilerplate)
+![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
-## Step 1: Start the Metro Server
+<p align="center">
+  <img alt="React Native Typescript Boilerplate"
+        src="assets/react-native-typescript-boilerplate.gif" height="650" width="325" />
+</p>
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+# 🥳 Version 4.0.0 is here 😍
 
-To start Metro, run the following command from the _root_ of your React Native project:
+We're proudly announce that `Version 4.0.0` is here!
 
-```bash
-# using npm
-npm start
+- Better **built-in theming** support with React Navigation
+- Native Splash Screen
+- New React Native Architecture Ready **(RN 0.73+)** 🍻
+- Awesome Theme Support for both Light / Dark Mode 🌙
+- Latest `React` and `React Native` Dependencies 🌟
+- All Dependencies are **Upgraded**
+- New GIF with the Project Example for Theming
+- Much Better Documentation
+- Detailed Roadmap
 
-# OR using Yarn
-yarn start
+# 🐶 What's Included?
+
+- **Typescript**
+- **Flipper Ready**
+- **Navigation System**
+  - [React Navigation 6](https://reactnavigation.org/blog/2021/08/14/react-navigation-6.0/)
+  - [React Navigation Helpers](https://github.com/WrathChaos/react-navigation-helpers)
+  - Ready to use Stack and Tab Screens with navigation
+- **NEW: Built-in Theme System with Hooks**
+  - ☀️ Light Theme Support
+  - 🌙 Dark Theme Support
+  - Dynamic Color Palette System
+  - Custom Font Support
+  - Built-in Better `Text` Component
+- **Ready to use [React Native Reanimated 2](https://docs.swmansion.com/react-native-reanimated/) Integration**
+- **Native Splash Screen Integration**
+  - [React Native Splash Screen](https://github.com/crazycodeboy/react-native-splash-screen)
+- **Awesome [React Native Helpers](https://github.com/WrathChaos/react-native-helpers) Integration**
+  - Noth Detection Support
+  - Better Dimension Helper (Ex: ScreenWidth, ScreenHeight)
+  - Cool Text Helpers
+- **React Native Vector Icons**
+  - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+  - [React Native Dynamic Vector Icons](https://github.com/WrathChaos/react-native-dynamic-vector-icons)
+- **[Localization](https://github.com/stefalda/ReactNativeLocalization) (Multi-Language Support)**
+- **HTTP Network Management**
+  - [Axios](https://github.com/axios/axios)
+  - [Axios Hooks](https://github.com/simoneb/axios-hooks)
+  - API Service with Usage Examples
+- **Built-in EventEmitter**
+  - [EventBus](https://github.com/browserify/events#readme)
+- **Babel Plugin Module Resolver**
+  - Fixing the relative path problem
+  - Visit `.babelrc` to ready to use and more customization
+- **Pre-commit Husky Integration**
+  - Ready to command husky setup with `npm run husky:setup`
+  - `commitlint` Integration for better commit linter
+  - Auto prettier on pre-commit
+  - Awesome ESLint Integration
+- **Built-in Custom Font Implementation**
+  - All you need to do is copy-paste the .tff files into `assets/fonts` folder
+  - Run `npx react-native-asset` command
+
+- **More and more! :)**
+
+# 🚀 Getting Started
+
+## Quick Start
+
+To create a new project using the barebone boilerplate:
+
+```sh
+git clone https://github.com/WrathChaos/react-native-typescript-boilerplate.git my-app-name
 ```
 
-## Step 2: Start your Application
+# 🎯 Step By Step Guide
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Clean-Up & Simple Run
 
-### For Android
+Clean up the files from the example repository and do not forget to install the dependencies
+There is a good example by default on `HomeScreen`. You can delete the all screens.
 
-```bash
-# using npm
-npm run android
+- `npm i`
+- `npm run clean-up`
+- `npm i && npx pod-install`
+- `react-native run-ios/android`
 
-# OR using Yarn
-yarn android
+**OR**
+
+- `rm -rf .git README.md`
+- `rm -rf ./assets`
+- `npm i`
+- `npm run husky:setup`
+- `npx pod-install` (iOS Only)
+- `react-native run-ios/android`
+
+## Husky Integration
+
+Before doing anything else, please simply run the command to initalize the husky. If you do not run clean-up part you should run the husky setup by yourself
+
+```jsx
+npm run husky:setup
 ```
 
-### For iOS
+`husky:setup` will handle the initialization, installation and ready to use `commitlint`, `prettier` and `eslint`.
 
-```bash
-# using npm
-npm run ios
+## Rename the project: (Thanks to [react-native-name](https://github.com/junedomingo/react-native-rename))
 
-# OR using Yarn
-yarn ios
+```sh
+npx react-native-rename <your-project-name>
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+> With custom Bundle Identifier (Android only. For iOS, please use Xcode)
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+```sj
+npx react-native-rename <your-project-name> -b <bundleIdentifier>
+```
 
-## Step 3: Modifying your App
+### Install Pods (iOS Only)
 
-Now that you have successfully run the app, let's modify it.
+- `npm i`
+- `cd ios && pod install`
+- `cd .. && react-native run-ios/android`
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+### Android local.properties (Android Only)
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+- `npm i`
+- `cd android && mkdir local.properties`
+- `nano local.properties`
 
-## Congratulations! :tada:
+#### Example of MacOS Android SDK Path
 
-You've successfully run and modified your React Native App. :partying_face:
+Make sure that set your right path of Android **SDK**
 
-### Now what?
+##### MacOS / Linux
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+Replace your machine name instead of `username`
 
-# Troubleshooting
+```
+sdk.dir=/Users/username/Library/Android/sdk
+```
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+##### Windows
 
-# Learn More
+Replace your machine name instead of `username`
 
-To learn more about React Native, take a look at the following resources:
+```
+sdk.dir=/Users/username/Library/Android/sdk
+```
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- `cd .. & react-native run-ios/android`
+
+# 📃 Documentations
+
+- [Components](./docs/components.md)
+- [Axios Hooks](./docs/axios-hooks.md)
+- [Event Emitter Usage](./docs/event-emitter.md)
+- [Project Structure](./docs/project-structure.md)
+
+# 🔮 Roadmap
+
+- [x] ~~LICENSE~~
+- [x] ~~Better Husky: Linter, Prettier and Commintlint~~
+- [x] ~~Removal of `react-native-animated-splash-screen`~~
+- [x] ~~New Theme Support with React Navigation~~
+- [x] ~~Implement the native splash screen with [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)~~
+- [x] ~~Better and separated documentation~~
+- [x] ~~Axios Hooks~~
+- [x] ~~React Native New Architecture~~
+- [ ] `Babel Plugin Module Resolver` Documentation with Example
+- [ ] `Navigation Service` Documentation with Example
+- [ ] `Localization` Documentation with Example
+- [ ] `Theme` Documentation with Example
+- [ ] `FAQ` Documentation
+- [ ] `Website` for the boilerplate
+- [ ] Splash Screen Documentation
+- [ ] `Detox E2E` Integration Fork Version
+- [ ] Write an article about the lib on `Medium`
+- [ ] Write an article about the lib on `DevTo`
+
+## Credits
+
+<span>Photo by <a href="https://unsplash.com/@sotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shifaaz shamoon</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+
+<span>Photo by <a href="https://unsplash.com/@jamie452?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jamie Street</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+
+## Author
+
+FreakyCoder, kurayogun@gmail.com
+
+## License
+
+React Native Typescript Boilerplate is available under the MIT license. See the LICENSE file for more info.
